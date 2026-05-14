@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김한결 | Links</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 16px 80px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    /* Profile */
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #7f5af0, #2cb67d);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.4rem;
+      box-shadow: 0 0 0 4px rgba(127, 90, 240, 0.3);
+    }
+
+    .name {
+      color: #fffffe;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .bio {
+      color: #a7a9be;
+      font-size: 0.9rem;
+      text-align: center;
+      line-height: 1.5;
+      max-width: 320px;
+    }
+
+    /* Links */
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      padding: 16px 20px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fffffe;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      backdrop-filter: blur(8px);
+      transition: background 0.2s, transform 0.15s, border-color 0.2s;
+      cursor: pointer;
+    }
+
+    .link-btn:hover {
+      background: rgba(255, 255, 255, 0.13);
+      border-color: rgba(255, 255, 255, 0.22);
+      transform: translateY(-2px);
+    }
+
+    .link-btn:active {
+      transform: translateY(0);
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .icon-portfolio { background: linear-gradient(135deg, #7f5af0, #5b3fc4); }
+    .icon-github    { background: linear-gradient(135deg, #24292e, #4a4e57); }
+    .icon-blog      { background: linear-gradient(135deg, #2cb67d, #1a8f5f); }
+    .icon-linkedin  { background: linear-gradient(135deg, #0077b5, #005885); }
+    .icon-email     { background: linear-gradient(135deg, #ff6b6b, #c0392b); }
+    .icon-notion    { background: linear-gradient(135deg, #3a3a3a, #1a1a1a); }
+
+    .link-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .link-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .link-desc {
+      font-size: 0.78rem;
+      color: #a7a9be;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 24px;
+      color: rgba(167, 169, 190, 0.5);
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="avatar">👤</div>
+    <div class="name">김한결</div>
+    <div class="bio">개발자 · 디자이너 · 크리에이터<br>새로운 것을 만드는 걸 좋아합니다 🚀</div>
+
+    <div class="links">
+
+      <a class="link-btn" href="#" target="_blank" rel="noopener">
+        <div class="icon icon-portfolio">🌐</div>
+        <div class="link-text">
+          <span class="link-title">포트폴리오</span>
+          <span class="link-desc">제 작업물과 프로젝트를 확인해보세요</span>
+        </div>
+      </a>
+
+      <a class="link-btn" href="#" target="_blank" rel="noopener">
+        <div class="icon icon-github">🐙</div>
+        <div class="link-text">
+          <span class="link-title">GitHub</span>
+          <span class="link-desc">오픈소스 기여 및 개인 프로젝트</span>
+        </div>
+      </a>
+
+      <a class="link-btn" href="#" target="_blank" rel="noopener">
+        <div class="icon icon-blog">✍️</div>
+        <div class="link-text">
+          <span class="link-title">기술 블로그</span>
+          <span class="link-desc">개발 경험과 인사이트를 공유합니다</span>
+        </div>
+      </a>
+
+      <a class="link-btn" href="#" target="_blank" rel="noopener">
+        <div class="icon icon-linkedin">💼</div>
+        <div class="link-text">
+          <span class="link-title">LinkedIn</span>
+          <span class="link-desc">커리어 및 네트워킹</span>
+        </div>
+      </a>
+
+      <a class="link-btn" href="#" target="_blank" rel="noopener">
+        <div class="icon icon-notion">📋</div>
+        <div class="link-text">
+          <span class="link-title">Notion 이력서</span>
+          <span class="link-desc">경력 및 프로젝트 정리본</span>
+        </div>
+      </a>
+
+      <a class="link-btn" href="mailto:hangyeol.kim@dmate.kr">
+        <div class="icon icon-email">✉️</div>
+        <div class="link-text">
+          <span class="link-title">이메일 문의</span>
+          <span class="link-desc">hangyeol.kim@dmate.kr</span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="footer">© 2026 김한결</div>
+  </div>
+</body>
+</html>
